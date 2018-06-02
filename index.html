@@ -46,6 +46,8 @@
     <script src="src/view.js"></script>
     <script src="src/controller.js"></script>
     <script src="src/app.js"></script>
-    <script src="src/bootstrap.js"></script>
+    <% if (htmlWebpackPlugin.options.mode === 'development') { %>
+      <div>optional</div>
+    <% } %>  
   </body>
 </html>
